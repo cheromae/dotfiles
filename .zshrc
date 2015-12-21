@@ -45,3 +45,5 @@ eval "$(rbenv init - zsh)"
 # scripts
 PATH=~/scripts/:$PATH
 
+# zshrc_local
+[ -f $ZDOTDIR/.zshrc_local ] && . $ZDOTDIR/.zshrc_local
