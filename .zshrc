@@ -4,7 +4,8 @@
 
 # 環境変数
 export LANG=ja_JP.UTF-8
-
+export DOT_FILES=$HOME/dotfiles
+#
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit
@@ -46,4 +47,4 @@ eval "$(rbenv init - zsh)"
 PATH=~/scripts/:$PATH
 
 # zshrc_local
-[ -f $ZDOTDIR/.zshrc_local ] && . $ZDOTDIR/.zshrc_local
+[ -f $DOT_FILES/.zshrc_local ] && . $DOT_FILES/.zshrc_local
