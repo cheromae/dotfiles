@@ -38,8 +38,7 @@ NeoBundleCheck
 
 syntax on
 
-" タブと行の続きを可視化する
-set listchars=tab:>\ ,extends:<
+
 " 行番号を表示する
 set number
 " 対応する括弧やブレースを表示する
@@ -48,8 +47,16 @@ set showmatch
 set autoindent
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set smartindent
+
+""" tab, spce """
+" 不可視文字を表示する
+set list
+" タブと行の続きを可視化する
+set listchars=tab:>\ ,extends:<
 " タブ文字の表示幅
 set tabstop=2
+" タブをスペースに変換する
+set expandtab
 " Vimが挿入するインデントの幅
 set shiftwidth=2
 
